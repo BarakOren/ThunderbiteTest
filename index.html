@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Barak oren - Thunderbite</Title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="wheelDiv">
+        <img class="marker" src="images/marker.png" alt=""/> 
+        <img id="wheel" class="wheel" src="images/wheel.png" alt=""/>
+        <img id="button" class="button" src="images/btn-spin.png" alt=""/> 
+    </div>
+    <div id="modal">
+        <div id="box">
+            <p id="result">You won SOMETHING!</p>
+            <button id="TryAgain">Spin Again!</button>
+        </div>
+    </div>
+</body>
+
+
+<script src="./node_modules/pixi.js/dist/browser/pixi.min.js"></script>
+<script src="./app.js"></script><script src="./wheel.js"></script>
+
+</html>
