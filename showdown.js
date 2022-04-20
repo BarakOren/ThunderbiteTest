@@ -153,7 +153,7 @@ function setup(loader ,resources){
     mustDrop.alpha = 0;
 
 
-    app.stage.addChild(showdown, s, h, o, w, d, o1, w1, n, bolt)
+    app.stage.addChild(showdown, s, h, o, w, d, o1, w1, n)
     setTimeout(VegasSlotsflicker, 700)
     setTimeout(renderLetters, 1000)
     setTimeout(boltFlickering, 1450)
@@ -170,9 +170,9 @@ function setup(loader ,resources){
         else if (window.innerWidth > 440 && window.innerWidth < 600){
             sH = 193; hH = 193; oH = 193; wH = 184; dH = 178; o1H = 182; w1H = 193; nH = 193; mustDropH = 266;   
         } else if (window.innerWidth > 600 && window.innerWidth < 1200) {
-            sH = 193; hH = 193; oH = 193; wH = 184; dH = 178; o1H = 182; w1H = 193; nH = 193; mustDropH = 266;      
+            sH = 193; hH = 193; oH = 193; wH = 184; dH = 177; o1H = 181; w1H = 193; nH = 193; mustDropH = 266;      
         } else if(window.innerWidth > 1200) {
-            sH = 193; hH = 195; oH = 195; wH = 184; dH = 178; o1H = 182; w1H = 193; nH = 193; mustDropH = 278;   
+            sH = 193; hH = 195; oH = 195; wH = 184; dH = 177; o1H = 181; w1H = 193; nH = 193; mustDropH = 278;   
         }
     }
 
@@ -236,6 +236,7 @@ function setup(loader ,resources){
     }
  
     function boltFlickering(){
+        app.stage.addChild(bolt)
         let onOff = true; //
         let changer = true; //
         let counter = 0 
